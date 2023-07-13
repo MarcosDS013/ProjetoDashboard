@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsivo Dashboard</title>
+    <!--MATERIAL ICON-->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <!-- FIM MATERIAL ICONS -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="images/LogoMDS0.png" />
+            <h2>M<span class="danger">DS</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp">person_outline</span>
+            <h3>Customers</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">receipt_long</span>
+            <h3>Orders</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">insights</span>
+            <h3>Analytics</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">mail_outline</span>
+            <h3>Messages</h3>
+            <span class="message-count">26</span>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">inventory</span>
+            <h3>Products</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">report_gmailerrorred</span>
+            <h3>Reports</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">settings</span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">add</span>
+            <h3>Add Product</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!-- ================== FIM DO ASIDE ================== -->
+
+      <main>
+        <h1>Dashboard</h1>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+          <div class="sales">
+            <span class="material-icons-sharp">analytics</span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Total Vendas</h3>
+                <h1>R$25,99</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Últimas 24 Horas</small>
+          </div>
+          <!-- ===================== FIM DO SALES ================= -->
+          <div class="expenses">
+            <span class="material-icons-sharp">bar_chart</span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Total Despesas</h3>
+                <h1>R$14,50</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Últimas 24 Horas</small>
+          </div>
+          <!-- ====================== FIM DO EXPENSES ======================-->
+          <div class="income">
+            <span class="material-icons-sharp">stacked_line_chart</span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Total Renda</h3>
+                <h1>R$10.86</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>44%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Últimas 24 Horas</small>
+          </div>
+          <!-- =====================FIM DO INCOME ======================= -->
+        </div>
+        <!-- ==================== FIM DOS INSIGHTS =====================-->
+
+        <div class="recent-orders">
+          <h2>Recente Ordens de Serviços</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome Produto</th>
+                <th>Número Produto</th>
+                <th>Pagamento</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mini Drone</td>
+                <td>85631</td>
+                <td>Aguardando</td>
+                <td class="warning">Pendente</td>
+                <td class="primary">Detalhes</td>
+              </tr>
+              <tr>
+                <td>Laptop Corei8</td>
+                <td>79688</td>
+                <td>Em Análise</td>
+                <td class="warning">Pendente</td>
+                <td class="primary">Detalhes</td>
+              </tr>
+              <tr>
+                <td>Mini Drone</td>
+                <td>85631</td>
+                <td>Concretizado</td>
+                <td class="warning">Finalizado</td>
+                <td class="primary">Detalhes</td>
+              </tr>
+              <tr>
+                <td>Camera 4k</td>
+                <td>358011</td>
+                <td>Aguardando</td>
+                <td class="warning">Pendente</td>
+                <td class="primary">Detalhes</td>
+              </tr>
+              <tr>
+                <td>Mini Drone</td>
+                <td>85631</td>
+                <td>Cancelado</td>
+                <td class="warning">Cancelado</td>
+                <td class="primary">Detalhes</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">Mostre +</a>
+        </div>
+      </main>
+      <!-- =================== FINAL DO MAIN ==================== -->
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+
+          <div class="profile">
+            <div class="info">
+              <p>Olá, <b>User</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="images/MarcosDS.png" />
+            </div>
+          </div>
+        </div>
+        <!-- ==================== FINAL DO TOPO DA DIREITA =============== -->
+
+        <div class="recent-updates">
+          <h2>Novas Atualizações</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-1.jpg" />
+              </div>
+              <div class="message">
+                <p><b>Mike Tyson</b> Recebeu seu pedido de Drone Night Tech</p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-2.jpg" />
+              </div>
+              <div class="message">
+                <p><b>Juca Malaquias</b> Recebeu seu pedido de Camera 4K</p>
+                <small class="text-muted">30 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-3.jpg" />
+              </div>
+              <div class="message">
+                <p><b>Madona Silva</b> Recebeu seu pedido de Laptop Corei8</p>
+                <small class="text-muted">45 Minutes Ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================ FIM DO RECENT UPDATES ================ -->
+
+        <div class="sales-analytics">
+          <h2>Análise de Vendas</h2>
+          <div class="item online">
+            <div class="icon">
+              <span class="material-icons-sharp">shopping_cart</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>On Line OS</h3>
+                <small class="text-muted">Últimas 24 Horas</small>
+              </div>
+              <h5 class="sucess">+39%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+          <div class="item offline">
+            <div class="icon">
+              <span class="material-icons-sharp">local_mall</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>Off Line OS</h3>
+                <small class="text-muted">Últimas 24 Horas</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>1100</h3>
+            </div>
+          </div>
+          <div class="item customers">
+            <div class="icon">
+              <span class="material-icons-sharp">person</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>Novos Clientes</h3>
+                <small class="text-muted">Últimas 24 Horas</small>
+              </div>
+              <h5 class="sucess">+25%</h5>
+              <h3>631</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <div>
+              <span class="material-icons-sharp">add</span>
+              <h3>Add Produto</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="index.html"></script>
+  </body>
+</html>
